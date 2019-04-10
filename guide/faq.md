@@ -32,9 +32,8 @@ sidebarDepth: 0
 ## 出现 `Invalid bound statement (not found)` 异常
 
 > 不要怀疑，正视自己，这个异常肯定是你插入的姿势不对……
-
 - 检查是不是引入 jar 冲突
-
+- 检查 继承BaseMapper是否已声明泛型类型(数据类型)
 - 检查 Mapper.java 的扫描路径
 
   - 方法一：在 `Configuration` 类上使用注解 `MapperScan`
